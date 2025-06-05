@@ -1,0 +1,33 @@
+# General
+.DS_Store
+*.log
+*.tmp
+*.swp
+
+# Node.js / Backend
+backend/node_modules/
+backend/.env
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/package-lock.json # if backend uses npm and you prefer not to commit lock file, though often recommended
+
+# Frontend (Create React App usually handles its own .gitignore in frontend/)
+# but we can add common ones here too as a safeguard or if CRA's .gitignore is missed
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/coverage/
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System files
+Thumbs.db
+ehthumbs.db
