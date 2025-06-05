@@ -16,7 +16,15 @@ app.get('/', (req, res) => {
   res.json({ message: 'Welcome to the Senior Service Management Application API!' });
 });
 
-// TODO: Add other routes here (e.g., for clients, tasks, users)
+// Import Routes
+const clientRoutes = require('./routes/clientRoutes');
+// TODO: Import other routes like taskRoutes, authRoutes when created
+
+// Mount Routers
+app.use('/api/clients', clientRoutes);
+// TODO: app.use('/api/tasks', taskRoutes);
+// TODO: app.use('/api/auth', authRoutes);
+
 
 // Start the server
 app.listen(PORT, () => {

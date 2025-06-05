@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css'; // We'll create this for basic global styles
+import 'antd/dist/reset.css'; // Ant Design CSS reset (or antd.min.css for production)
+import './index.css'; // Your basic global styles
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
